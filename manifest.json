@@ -1,0 +1,24 @@
+{
+  "name": "prevent_translation_of_code_tags",
+  "version": "1.0",
+  "description": "Adds a custom attribute to code tags on page load",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab"
+      "sc"
+  ],
+  "browser_action": {
+    "default_title": "Tag Attribute Editor",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["popup.js"],
+      "run_at" : "document_end",
+      "all_frames": true
+    }
+  ]
+}
