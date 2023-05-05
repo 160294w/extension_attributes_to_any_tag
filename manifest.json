@@ -1,13 +1,13 @@
 {
-  "name": "prevent_translation_of_code_tags",
-  "version": "1.0",
-  "description": "Adds a custom attribute to code tags on page load",
+  "name": "Add Attribute Extension",
+  "version": "1.1",
+  "description": "Add custom attribute to specific HTML tag",
   "manifest_version": 3,
   "permissions": [
-    "activeTab"
-      "sc"
+    "activeTab",
+    "scripting"
   ],
-  "browser_action": {
+  "action": {
     "default_title": "Tag Attribute Editor",
     "default_popup": "popup.html"
   },
